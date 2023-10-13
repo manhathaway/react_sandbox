@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_sandbox/static/css/main.af860166.css",
+    "main.js": "/react_sandbox/static/js/main.57c3fe6c.js",
+    "static/media/green_rings.svg": "/react_sandbox/static/media/green_rings.a01f45af6a6595256e22.svg",
+    "index.html": "/react_sandbox/index.html",
+    "static/media/menu_icon.svg": "/react_sandbox/static/media/menu_icon.6cef2c2aa30f0d026c3777ce0464f5eb.svg",
+    "main.af860166.css.map": "/react_sandbox/static/css/main.af860166.css.map",
+    "main.57c3fe6c.js.map": "/react_sandbox/static/js/main.57c3fe6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af860166.css",
+    "static/js/main.57c3fe6c.js"
+  ]
+}
