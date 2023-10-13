@@ -1,0 +1,42 @@
+/* General styling for grid cells (React components). */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  padding: 15px;
+  background: var(--body-background);
+  border-radius: 25px;
+
+  display: grid;
+  grid-template-rows: 45px 160px;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.body * {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 1.4rem;
+  padding: 10px;
+  background: var(--heading-background);
+  color: var(--heading-text);
+  border-radius: 12.5px 12.5px 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+width: 100%;
+background-color: var(--content-box);
+outline: 1.5px solid var(--content-box-border);
+border-radius: 0 0 12.5px 12.5px;
+height: 100%;
+padding: 10px;
+}

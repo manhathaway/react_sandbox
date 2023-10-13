@@ -1,0 +1,47 @@
+#CityList-list {
+  height: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0 0 7.5px 7.5px;
+  background-color: var(--content-box-layer);
+}
+
+#CityList-list,
+#CityList-list * {
+  width: 100%;
+}
+
+.CityList-button {
+  border: none;
+  color: var(--heading-text);
+  background-color: var(--highlight);
+  font-size: 1rem;
+  padding: 5px 10px;
+  text-align: left;
+  color: var(--body-text-dark);
+}
+
+/*
+.CityList-button:hover {
+  background-color: var(--highlight-interaction);
+  color: var(--body-text-light);
+}
+
+.CityList-button:focus,
+.CityList-button:active {
+  color: var(--body-text-light);
+}
+*/
+
+.CityList-button:last-of-type {
+  border-radius: 0 0 7.5px 7.5px;
+}
+
+.CityList-active {
+  background-color: var(--highlight);
+  color: var(--body-text-light);
+}
+
+.CityList-inactive {
+  background-color: var(--transparent);
+}

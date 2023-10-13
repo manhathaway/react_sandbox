@@ -1,0 +1,76 @@
+.Calculator-content {
+    display: grid;
+    grid-template-rows: 45px 1fr;
+}
+
+.Calculator-output {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 0.75fr 1fr;
+    align-content: center;
+}
+
+.Calculator-output * {
+    width: 100%;
+}
+
+.Calculator-previous-operand {
+    background-color: var(--heading-background);
+}
+
+.Calculator-current-operand {
+    border: 1.5px solid var(--heading-background);
+    margin: 2px 0;
+}
+
+.Calculator-grid {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 7.5px 7.5px;
+
+    display: grid;
+    grid-template-areas:
+        "-AC   -AC  -DEL   -MUL "
+        " one   two   thr   -DIV "
+        " fou   fiv   six   -ADD "
+        " sev   eig   nin   -SUB "
+        " zer   zer  -DEC   -EQU ";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
+}
+
+.Calculator-grid * {
+    width: 100%;
+    border: none;
+    background: var(--heading-background);
+    color: var(--body-text-light);
+    cursor: pointer;
+}
+
+.Calculator-grid *:hover {
+    background: var(--transparent);
+    color: var(--body-text-dark);
+}
+
+#AC,
+#DEL,
+#EQU {
+    background-color: var(--highlight)
+}
+
+#AC:hover,
+#DEL:hover,
+#EQU:hover {
+    background-color: var(--transparent);
+    color: var(--highlight)
+}
+
+#zer {
+    border-radius: 0 0 0 7.5px;
+}
+
+#EQU {
+    border-radius: 0 0 7.5px 0;
+}

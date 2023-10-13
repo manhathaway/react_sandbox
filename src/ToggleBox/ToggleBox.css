@@ -1,0 +1,70 @@
+.ToggleBox-content {
+    overflow-y: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+}
+
+.ToggleBox-bar {
+    width: 100%;
+    height: 40px;
+    padding: 7.5px;
+    background-color: var(--body-background);
+    border: 1.5px solid var(--content-box-border);
+
+    display: grid;
+    grid-template-columns: 1fr 65px;
+}
+
+.ToggleBox-bar * {
+    margin: 0;
+    width: 100%;
+}
+
+.ToggleBox-bar-grid-parent {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 10px;
+}
+
+.ToggleBox-label {
+    font-size: 0.9rem;
+    color: var(--body-text-dark);
+
+    display: flex;
+    align-items: center;
+}
+
+.ToggleBox-button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--highlight);
+    color: var(--body-text-light);
+}
+
+.ToggleBox-button:hover {
+    background-color: var(--highlight-interaction);
+}
+
+.ToggleBox-paragraph {
+    width: 100%;
+    padding: 7.5px;
+    font-size: 0.75rem;
+    background-color: var(--highlight);
+    color: var(--body-text-light);
+    font-style: italic;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ToggleBox-paragraph-down {
+    height: 25px;
+    
+    position: relative;
+    bottom: 2.5px;
+}

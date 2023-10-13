@@ -1,0 +1,101 @@
+.ToDo-content {
+  display: grid;
+  grid-template-rows: 35px 95px;
+  row-gap: 10px;
+}
+
+#ToDo-form {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  gap: 10px;
+}
+
+#ToDo-form,
+#ToDo-form * {
+  width: 100%;
+}
+
+.ToDo-input {
+  border: none;
+  padding: 10px;
+  background-color: var(--body-background);
+  border: 1.5px solid var(--content-box-border);
+}
+
+.ToDo-input,
+.ToDo-input:hover,
+.ToDo-input:focus,
+.ToDo-input:active {
+  color: var(--body-text-dark);
+}
+
+.ToDo-input:hover,
+.ToDo-input:focus,
+.ToDo-input:active {
+  background-color: var(--body-background-interaction);
+}
+
+.ToDo-button {
+  border: none;
+  color: var(--heading-text);
+  background-color: var(--highlight);
+  font-size: 1rem;
+}
+
+.ToDo-button:hover {
+  background-color: var(--highlight-interaction);
+}
+
+.ToDo-button:focus,
+.ToDo-button:active {
+  color: var(--body-text-light);
+}
+
+.ToDo-list-button {
+  padding: 5px 0 3px 0;
+}
+
+.ToDo-null {
+  color: var(--body-text-dark);
+  background-color: var(--body-background);
+  border: 1.5px solid var(--content-box-border);
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 0 0 7.5px 7.5px;
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ToDo-list {
+  overflow-y: auto;
+  border-radius: 0 0 7.5px 7.5px;
+  
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: rows;
+  gap: 5px;
+}
+
+.ToDo-list-item {
+  background-color: var(--body-background);
+
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
+}
+
+#ToDo-list,
+.ToDo-list-item,
+.ToDo-list-item * {
+  width: 100%;
+}
+
+.ToDo-list-label {
+  font-size: 0.8rem;
+  margin: 0 10px;
+  color: var(--body-text-dark);
+}

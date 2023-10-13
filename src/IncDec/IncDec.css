@@ -1,0 +1,62 @@
+.IncDec-content {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.IncDec-subheading {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--body-text-dark);
+}
+
+.IncDec-subcontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 5px;
+}
+
+.IncDec-subcontent * {
+  width: 100%;
+}
+
+.IncDec-buttons {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.IncDec-button {
+  border: none;
+  color: var(--heading-text);
+  background-color: var(--highlight);
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.IncDec-button:last-of-type {
+  border-radius: 0 0 0 7.5px;
+}
+
+.IncDec-button:hover {
+  background-color: var(--highlight-interaction);
+}
+
+.IncDec-button:focus,
+.IncDec-button:active {
+  color: var(--body-text-light);
+}
+
+#IncDec-name {
+  font-size: 1rem;
+  background: var(--body-background);
+  color: var(--body-text-dark);
+  border-radius: 0 0 7.5px 0;
+  border: 1.5px solid var(--content-box-border);
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
